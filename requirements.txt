@@ -1,1 +1,6 @@
+google-generativeai
 google
+re
+os
+datetime
+googleapiclient
