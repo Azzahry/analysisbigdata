@@ -1,3 +1,2 @@
 google-generativeai
-googleapiclient
 google_auth_oauthlib
