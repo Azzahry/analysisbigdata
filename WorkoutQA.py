@@ -4,11 +4,9 @@ import datetime
 import webbrowser
 import re
 import os
-from google.oauth2 import service_account
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
-from googleapiclient.errors import HttpError
 from googleapiclient.discovery import build
 
 palm.configure(api_key="AIzaSyAlptuKGaJcuANXUZD6xUR_-RujrA9Z2YY")
