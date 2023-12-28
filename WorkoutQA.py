@@ -1,7 +1,6 @@
 import google.generativeai as palm
 import streamlit as st
 import datetime
-import webbrowser
 import re
 import os
 from google.auth.transport.requests import Request
@@ -113,6 +112,3 @@ if st.button('Generate'):
           end_time = start_time + datetime.timedelta(minutes=15)  # Asumsikan setiap langkah berlangsung selama satu jam
           event_id = add_event_to_calendar(day=day, summary=step, start_time=start_time, end_time=end_time)
           st.write(f"Step {i+1}: {step} on {day} (Event ID: {event_id})")
-
-if st.button("Go to Google Calendar"):
-    webbrowser.open("https://calendar.google.com")
